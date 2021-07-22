@@ -9,7 +9,7 @@ namespace NestedObjects
     /// <summary>
     /// Represents individual student
     /// </summary>
-    class Student
+    public class Student
     {
         /// <summary>
         /// student's legal first name

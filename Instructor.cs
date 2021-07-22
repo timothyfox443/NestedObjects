@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NestedObjects
 {
-    class Instructor
+    public class Instructor
     {
         /// <summary>
         /// legal fullname - FirstLastIE JoeOrtiz
@@ -16,6 +16,5 @@ namespace NestedObjects
         /// contact email for instructor IE john.doe@school.edu
         /// </summary>
         public string Email { get; set; }
-       
     }
 }

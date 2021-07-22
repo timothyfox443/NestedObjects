@@ -19,8 +19,10 @@ namespace NestedObjects
         /// <summary>
         /// this is the instructor that teaches the course - from instructor class
         /// </summary>
-        public Instructor Instructor { get; set; }
-
+        public Instructor CourseInstructor { get; set; }
+        /// <summary>
+        /// all students assigned to this class list
+        /// </summary>
         public List<Student> Roster { get; set; }
 
 

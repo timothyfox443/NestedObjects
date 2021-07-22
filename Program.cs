@@ -29,12 +29,14 @@ namespace NestedObjects
                 FirstName = "Margaret",
                 LastName = "Simpson"
             };
-            Course testCourse = new Course();
-            testCourse.Title = "CPW 212 - Adv .NET";
-            testCourse.Description = "This is what you are doing right now";
-            testCourse.Credits = 5;
-            testCourse.CourseInstructor = currInst;
-            testCourse.Roster = new List<Student>();
+            Course testCourse = new Course
+            {
+                Title = "CPW 212 - Adv .NET",
+                Description = "This is what you are doing right now",
+                Credits = 5,
+                CourseInstructor = currInst,
+                Roster = new List<Student>()
+            };
             testCourse.Roster.Add(s1);
             testCourse.Roster.Add(s2);
             testCourse.Roster.Add(s3);

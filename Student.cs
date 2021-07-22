@@ -9,7 +9,7 @@ namespace NestedObjects
     /// <summary>
     /// Represents individual student
     /// </summary>
-    class Student
+    public class Student
     {
         /// <summary>
         /// student's legal first name
@@ -19,8 +19,10 @@ namespace NestedObjects
         /// studnet's legal last name
         /// </summary>
         public string LastName { get; set; }
-
-
+        /// <summary>
+        /// list of courses student is in
+        /// </summary>
+        public List<Course> Schedule { get; set; }
 
     }
 }

@@ -29,6 +29,17 @@ namespace NestedObjects
                 FirstName = "Margaret",
                 LastName = "Simpson"
             };
+
+            Course c2 = new Course()
+            {
+                Title = "CPW 245 Data Structures"
+            };
+
+            Course c3 = new Course()
+            {
+                Title = "CPW 213 .NET Web Programming"
+            };
+
             Course testCourse = new Course
             {
                 Title = "CPW 212 - Adv .NET",
@@ -37,9 +48,17 @@ namespace NestedObjects
                 CourseInstructor = currInst,
                 Roster = new List<Student>()
             };
+
             testCourse.Roster.Add(s1);
             testCourse.Roster.Add(s2);
             testCourse.Roster.Add(s3);
+
+            //s3.Schedule.Add(c2);
+            //s3.Schedule.Add(c3);
+            //s3.Schedule.Add(testCourse);
+
+
+
 
             Console.WriteLine(testCourse.Title);
             Console.WriteLine("Is taught by "+ testCourse.CourseInstructor.FullName);
@@ -49,6 +68,12 @@ namespace NestedObjects
             {
                 Console.WriteLine($"{s.FirstName} {s.LastName}");
             }
+            //Console.WriteLine("Courses Currently enrolled in: ");
+            //foreach (Course c in s3.Schedule)
+            //{
+            //    Console.WriteLine($"{c.Title}");
+            //}
+
 
             Console.ReadKey();
         }

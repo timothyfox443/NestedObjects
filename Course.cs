@@ -24,7 +24,5 @@ namespace NestedObjects
         /// all students assigned to this class list
         /// </summary>
         public List<Student> Roster { get; set; }
-
-
     }
 }
